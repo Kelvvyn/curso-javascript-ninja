@@ -97,7 +97,7 @@ Para retornar os valores de marca e modelo, utilize os métodos criados.
 */
 
 carro.obterMarcaModelo = function(){
-  return 'Esse carro é um ' + carro.marca + ' ' + carro.modelo;
+  return 'Esse carro é um ' + carro.obterMarca() + ' ' + carro.obterModelo();
 }
 
 /*
@@ -171,9 +171,9 @@ carro.obterCor();
 
 // Qual a marca e modelo do carro?
 
-carro.obterModelo();
+carro.obterMarcaModelo();
 
-//'Civic'
+//'Honda Civic'
 
 
 // Adicione 2 pessoas no carro.
@@ -196,7 +196,7 @@ carro.addPessoa(3);
 
 // Tire 4 pessoas do carro.
 
-carro.quantidadePessoas = -4;
+carro.addPessoa(-4);
 
 
 // Adicione 10 pessoas no carro.
