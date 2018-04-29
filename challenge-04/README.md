@@ -9,7 +9,7 @@ para o contrário.
 */
 
 var isTruthy = function(x){
-  return x == true ? true : false;
+  return x ? true : false;
 
 }
 
