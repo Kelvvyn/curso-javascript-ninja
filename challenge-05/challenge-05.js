@@ -78,10 +78,9 @@ function book (bookName){
       editora:"Editora Érika"
     }
   };
- if (!bookName){
- return allBooks;
- }
-  return (allBooks[bookName]);
+  
+ return !bookName ? allBooks : allBooks[ bookName ];
+ 
 }
 
 /*
