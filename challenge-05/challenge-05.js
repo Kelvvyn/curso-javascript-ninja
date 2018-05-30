@@ -112,4 +112,4 @@ a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
 
-""O livro Introdução À Programação Com Python foi publicado pela editora "  + book('Introdução À Programação Com Python').editora;
+"O livro Introdução À Programação Com Python foi publicado pela editora "  + book('Introdução À Programação Com Python').editora;
