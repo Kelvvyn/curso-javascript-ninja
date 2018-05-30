@@ -60,30 +60,56 @@ propriedades:
 os livros.
 */
 
-
+function book (bookName){
+  var allBooks = {
+    'Introdução À Programação Com Python': {
+      quantidadePaginas: 228,
+      autor:"Coutinho Menezes, Nilo Ney",
+      editora:"NOVATEC"
+    },
+    'Javascritp - Aprenda A Programar Utilizando A Linguagem Javascript': {
+      quantidadePaginas: 288,
+      autor:"Reis, Daniela Borges Dos",
+      editora:"Viena"
+  },
+    'Algoritmos - Lógica Para Desenvolvimento de Programação de Computadores':
+    {quantidadePaginas:	336,
+      autor:"Manzano,Jose Augusto N. G.; Oliveira,Jayr Figueiredo de",
+      editora:"Editora Érika"
+    }
+  };
+ if (!bookName){
+ return allBooks;
+ }
+  return (allBooks[bookName]);
+}
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
 */
-// ?
+
+book()
 
 /*
 Ainda com a função acima, imprima a quantidade de páginas de um livro qualquer,
 usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
-// ?
+
+"O livro Introdução À Programação Com Python tem "  + book('Introdução À Programação Com Python').quantidadePaginas + " páginas!";
 
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
 a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
-// ?
+
+"O autor do livro Introdução À Programação Com Python é "  + book('Introdução À Programação Com Python').autor;
 
 /*
 Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
 a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
-// ?
+
+""O livro Introdução À Programação Com Python foi publicado pela editora "  + book('Introdução À Programação Com Python').editora;
