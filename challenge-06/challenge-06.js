@@ -35,6 +35,9 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
 */
 
 function showTeamPosition(x){
+  if (X < 1 || x > 5){
+    return 'Não temos a informação do time que está nessa posição.';
+  }
   return ('O time que está em ' + x + 'º é lugar é o ' + teams[x-1] +'.');
 }
 
@@ -43,7 +46,11 @@ Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
 função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 */
 
+showTeamPosition(1);
+showTeamPosition(2);
+showTeamPosition(3);
 showTeamPosition(4);
+showTeamPosition(12);
 
 
 /*
