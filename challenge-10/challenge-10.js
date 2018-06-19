@@ -14,7 +14,7 @@ resolver o problema corretamente.
 var five = Number('5');
 console.log( five + ' é número?', typeof five === 'number' );
 
-var concat = String(10 + 10);
+var concat = String(10) + 10;
 console.log( '"' + concat + '" é uma string? E é igual a "1010"?', typeof concat === 'string' );
 
 /*
@@ -40,7 +40,18 @@ Caso contrário, "false".
 - O desafio é fazer o retorno sem usar "if" ou "switch".
 */
 
- function isOperatorValid(op){ return op == '+' || op == '-' || op == '*' || op == '/' || op == '%';}
+function isOperatorValid(op){
+ if (!!operation[op]){
+    return false;
+
+ }
+    return function(x,y){
+    if( typeof x != 'number' && typeof x != 'number'){
+        return false;
+      }
+        return operation['op'](x,y);
+  }
+}
 
 /*
 Agora vamos criar a calculadora.
@@ -54,7 +65,12 @@ parâmetros;
 operador passado para a função "calculator", e passando para esse método
 os dois parâmetros da função de retorno de "calculator".
 */
-// ?
+
+function calculator( op ){
+  return !isOperatorValid(op) ? false : true; 
+
+
+}
 
 /*
 Crie uma função chamada "showOperationMessage" que recebe três parâmetros:
