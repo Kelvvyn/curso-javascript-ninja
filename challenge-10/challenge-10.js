@@ -41,9 +41,8 @@ Caso contrário, "false".
 */
 
 function isOperatorValid(op){
- if (!!operation[op]){
-    return false;
-
+ return !!operation[op];
+    
  }
 
 
@@ -61,6 +60,18 @@ os dois parâmetros da função de retorno de "calculator".
 */
 
 
+ function calculator(op){
+  if (!isOperatorValid(op)){
+    return false;
+  }  
+   return function(x,y){ if (typeof x != 'number' && typeof y != 'number'){
+    return false;
+   }
+    return operation[op](x,y);
+  } 
+ } 
+  
+ 
 
 /*
 Crie uma função chamada "showOperationMessage" que recebe três parâmetros:
