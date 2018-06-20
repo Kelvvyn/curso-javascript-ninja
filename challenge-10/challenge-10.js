@@ -45,13 +45,7 @@ function isOperatorValid(op){
     return false;
 
  }
-    return function(x,y){
-    if( typeof x != 'number' && typeof x != 'number'){
-        return false;
-      }
-        return operation['op'](x,y);
-  }
-}
+
 
 /*
 Agora vamos criar a calculadora.
@@ -66,11 +60,7 @@ operador passado para a função "calculator", e passando para esse método
 os dois parâmetros da função de retorno de "calculator".
 */
 
-function calculator( op ){
-  return !isOperatorValid(op) ? false : true; 
 
-
-}
 
 /*
 Crie uma função chamada "showOperationMessage" que recebe três parâmetros:
